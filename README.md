@@ -21,6 +21,23 @@ Open `dist/index.html` directly in a browser — no server needed.
 
 ---
 
+## Running for Others to Access
+
+`npm run dev` is a **development server** — it's fine for personal use on your own machine but is not intended to be exposed to the internet.
+
+For a stable, lightweight way to share the app on your local network:
+
+```bash
+npm run build    # compile once to dist/
+npm run preview  # serve the compiled build
+```
+
+`preview` serves the finished `dist/` folder with no dev tooling overhead and behaves like a deployed site. Stop it any time with **Ctrl+C**.
+
+> **To stop `npm run dev` or `npm run preview`:** press **Ctrl+C** in the terminal where it's running.
+
+---
+
 ## How to Use
 
 ### 1. Add a Loop
